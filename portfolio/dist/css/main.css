@@ -74,6 +74,22 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #ccc;
+  color: #000; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -134,6 +150,11 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -200,6 +221,76 @@ img {
       #home-c .process-icon:hover .process-step {
         background: #333;
         color: #fff; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bio-image bio bio' 'award-1 award-2 award-3';
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bio-image; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem; }
+
+#about-a .award-1 {
+  grid-area: award-1; }
+
+#about-a .award-2 {
+  grid-area: award-2; }
+
+#about-a .award-3 {
+  grid-area: award-3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #ffbc00;
+  margin: 1rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #ffbc00; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+
+#about-c img {
+  width: 70%; }
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem; }
+
+#about-d ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center; }
+
+#about-d p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem; }
+
+#about-d img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5rem; }
 
 #main-footer {
   background: #333;

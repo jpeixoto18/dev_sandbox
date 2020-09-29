@@ -91,6 +91,12 @@ img {
       }
     }
   }
+
+  &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+  }
 }
 
 // Home sections
@@ -191,6 +197,97 @@ img {
           }
         }
       }
+    }
+  }
+}
+
+// About Sections
+#about {
+  // About A
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas: 
+      'bio-image bio bio'
+      'award-1 award-2 award-3';
+      grid-gap: 1.2rem;
+    }
+
+    // Grid areas
+    .bio-image { grid-area: bio-image}
+    .bio { 
+      grid-area: bio; 
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+    .award-1 { grid-area: award-1}
+    .award-2 { grid-area: award-2}
+    .award-3 { grid-area: award-3}
+
+    .award-1 .fas, 
+    .award-2 .fas, 
+    .award-3 .fas { 
+      color: $main-color;
+      margin: 1rem;
+  }
+  }
+
+  // About B
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 2rem;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  // About D
+  &-d {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      border: 1px solid $medium-color;
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
     }
   }
 }
