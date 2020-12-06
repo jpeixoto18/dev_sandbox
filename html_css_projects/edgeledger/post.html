@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <title>Post One</title>
+</head>
+<body id='home'>
+    <header class="hero blog">
+        <div class="navbar top" id="navbar">
+            <h1 class='logo'>
+                <span class='text-primary'> <i class="fas fa-book-open"></i>Edge</span>Ledger</fa-book-open>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.hmtl#about">About</a></li>
+                    <li><a href="index.hmtl#cases">Cases</a></li>
+                    <li><a href="index.hmtl#blog">Blog</a></li>
+                    <li><a href="index.hmtl#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post one</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Jane Doe</strong> | April 21 2020
+            </p>
+            <img src="images/blog/blog1.jpg" alt="blog1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, deleniti. Aut doloribus illum voluptate illo ea commodi est repellendus ullam numquam inventore cum nulla itaque, corrupti fuga molestiae porro earum repellat adipisci. Doloribus rem inventore ea corrupti debitis numquam modi fuga maiores reiciendis tempore dolore iure incidunt saepe perferendis sed sunt ipsum suscipit aperiam sit quia nesciunt natus, qui voluptatibus!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt eum voluptas aperiam numquam excepturi! Iusto porro error eius perspiciatis aspernatur? Libero excepturi cupiditate exercitationem aliquam dolore repellat enim consequatur voluptas quae ea. A, blanditiis quasi? Commodi porro libero totam. Dolores delectus ipsa, repellendus ullam labore velit numquam quisquam nesciunt.</p>
+        </section>
+    </main>
+
+    
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - EdgeLedger </p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar')
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if(!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)'
+                }
+                setTimeout(function() { navbar.style.transform = 'translateY(0)'},200); 
+                scrolled = true;
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+
+    </script>
+</body>
+</html>
